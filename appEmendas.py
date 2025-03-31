@@ -219,3 +219,17 @@ if pagina == "Análise Por Autor de Emenda":
 # Mostrando a base
 st.subheader("Base de Dados e Documentos Sem Filtros")
 st.dataframe(base, use_container_width=True)
+
+# colocando __main__ para rodar o app
+if __name__ == "__main__":
+    st.write("----")
+    st.markdown(
+        """
+        <p style="font-size: 12px; text-align: center;">
+        Este aplicativo foi desenvolvido para fins educacionais e de análise de dados. 
+        Os dados utilizados são de domínio público e foram extraídos do portal de dados abertos do Governo Federal.
+        </p>
+        """,
+        unsafe_allow_html=True
+    )
+    #
